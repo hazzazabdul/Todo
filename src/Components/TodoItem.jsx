@@ -31,7 +31,7 @@ function TodoItem({ todo: { todo, id, completed } }) {
       <input
         type="text"
         className={`border outline-none w-full bg-transparent rounded-lg ${
-          isTodoEditable ? "border-black/10 px-2" : "border-transparent"
+          isTodoEditable ? "border-black px-2" : "border-transparent"
         } ${completed ? "line-through" : ""}`}
         value={todoText}
         onChange={(e) => setTodoText(e.target.value)}
